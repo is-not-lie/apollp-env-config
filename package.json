@@ -19,7 +19,9 @@
     "size": "size-limit",
     "analyze": "size-limit --why"
   },
-  "peerDependencies": {},
+  "peerDependencies": {
+    "axios": ">=0.26.1"
+  },
   "husky": {
     "hooks": {
       "pre-commit": "tsdx lint"
@@ -31,16 +33,16 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "appllo-env-config",
+  "name": "apollo-env-config",
   "author": "qrz",
-  "module": "dist/appllo-env-config.esm.js",
+  "module": "dist/apollo-env-config.esm.js",
   "size-limit": [
     {
-      "path": "dist/appllo-env-config.cjs.production.min.js",
+      "path": "dist/apollo-env-config.cjs.production.min.js",
       "limit": "10 KB"
     },
     {
-      "path": "dist/appllo-env-config.esm.js",
+      "path": "dist/apollo-env-config.esm.js",
       "limit": "10 KB"
     }
   ],
@@ -50,10 +52,10 @@
     "size-limit": "^7.0.8",
     "tsdx": "^0.14.1",
     "tslib": "^2.3.1",
+    "axios": "^0.26.1",
     "typescript": "^4.6.3"
   },
   "dependencies": {
-    "axios": "^0.26.1",
     "dotenv": "^16.0.0"
   }
 }
